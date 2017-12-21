@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?6ngdzc');
+  src:  url('fonts/icomoon.eot?6ngdzc#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6ngdzc') format('truetype'),
+    url('fonts/icomoon.woff?6ngdzc') format('woff'),
+    url('fonts/icomoon.svg?6ngdzc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sub:before {
+  content: "\e900";
+  color: #8a8a8a;
+}
+.icon-add:before {
+  content: "\e901";
+  color: #8a8a8a;
+}
+
+@font-face {
+  font-family: 'car_det';
+  src:  url('fonts/car_det.eot?ytx2bj');
+  src:  url('fonts/car_det.eot?ytx2bj#iefix') format('embedded-opentype'),
+    url('fonts/car_det.ttf?ytx2bj') format('truetype'),
+    url('fonts/car_det.woff?ytx2bj') format('woff'),
+    url('fonts/car_det.svg?ytx2bj#car_det') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-car_det"], [class*=" icon-car_det"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'car_det' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-car_detcaricon:before {
+  content: "\e950";
+  color: #757575;
+}
+.icon-car_detdeticon:before {
+  content: "\e951";
+  color: #8a8a8a;
+}

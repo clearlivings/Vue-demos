@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>tab栏切换-Vue版</title>
+    <style media="screen">
+      body,div {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      #tab {
+        margin: 20px auto;
+        width: 600px;
+        height: 500px;
+      }
+      .tab-tit {
+        font-size: 0;
+      }
+      .tab-tit a {
+        display: inline-block;
+        width: 150px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 20px;
+        text-align: center;
+        -webkit-text-size-adjust:none;
+        background: #ccc;
+      }
+      .tab-tit a.cur {
+        background: #789;
+      }
+      .tab-con {
+        overflow: hidden;
+        height: 465px;
+      }
+      .tab-con div {
+        height: 465px;
+        background-color: #789;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tab">
+      <div class="tab-tit">
+        <a href="javascript:;" @click='curId=0' :class='{"cur":curId===0}'>html</a>
+        <a href="javascript:;" @click='curId=1' :class='{"cur":curId===1}'>css</a>
+        <a href="javascript:;" @click='curId=2' :class='{"cur":curId===2}'>javascript</a>
+        <a href="javascript:;" @click='curId=3' :class='{"cur":curId===3}'>vue</a>
+      </div>
+      <div class="tab-con">
+        <div v-show='curId===0'>
+          html
+        </div>
+        <div v-show='curId===1'>
+          css
+        </div>
+        <div v-show='curId===2'>
+          javascript
+        </div>
+        <div v-show='curId===3'>
+          vue
+        </div>
+      </div>
+    </div>
+    <script src="vue.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    new Vue({
+      el: '#tab',
+      data: {
+        curId: 0
+      }
+    })
+
+    </script>
+  </body>
+</html>
